@@ -1,16 +1,19 @@
-// Public URL of the n8n "Website Chat" trigger (n8n/morrow-bean-workflow.json), e.g.
-// http://localhost:5678/webhook/<webhookId>/chat. Chat-trigger URLs are public by design.
+// Public Chat URL of the n8n "Website Chat" trigger (n8n/Morrow & Bean — Chatbot & Orders.json),
+// set as VITE_N8N_CHAT_URL in netlify.toml. Chat-trigger URLs are public by design.
 export const CHAT_URL = (import.meta.env.VITE_N8N_CHAT_URL as string | undefined)?.trim() ?? '';
 
+export type ChatInputMode = 'text' | 'voice';
+
 /** Sends one message to the n8n chat trigger and returns the agent's reply. Throws on any failure. */
-export async function askAgent(chatUrl: string, sessionId: string, chatInput: string): Promise<string> {
+export async function askAgent(chatUrl: string, sessionId: string, chatInput: string, inputMode: ChatInputMode = 'text'): Promise<string> {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), 30_000);
   try {
     const response = await fetch(chatUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-      body: JSON.stringify({ action: 'sendMessage', sessionId, chatInput, metadata: { inputMode: 'text' } }),
+      // inputMode "voice" makes the assistant answer in short, speakable sentences.
+      body: JSON.stringify({ action: 'sendMessage', sessionId, chatInput, metadata: { inputMode } }),
       signal: controller.signal,
     });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
