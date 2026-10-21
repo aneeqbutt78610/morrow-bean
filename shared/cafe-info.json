@@ -1,0 +1,15 @@
+{
+  "brand": {
+    "name": "Morrow & Bean Café",
+    "tagline": "Slow mornings. Good coffee.",
+    "instagram": "@morrowandbean.cafe",
+    "instagramUrl": "https://www.instagram.com/morrowandbean.cafe/"
+  },
+  "contact": {
+    "address": "Add café address before launch",
+    "hours": "Add confirmed opening hours before launch",
+    "phone": "",
+    "email": "",
+    "mapUrl": ""
+  }
+}

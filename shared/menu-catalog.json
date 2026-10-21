@@ -1,0 +1,146 @@
+[
+  {
+    "id": "flat-white",
+    "name": "Flat White",
+    "category": "SIGNATURE COFFEE",
+    "price": 650,
+    "description": "Rich espresso finished with silky steamed milk.",
+    "imageId": "photo-1461023058943-07fcbe16d735",
+    "imageAlt": "Flat white served in a ceramic cup"
+  },
+  {
+    "id": "spanish-latte",
+    "name": "Spanish Latte",
+    "category": "SIGNATURE COFFEE",
+    "price": 720,
+    "description": "Espresso softened with sweet, creamy milk.",
+    "imageId": "photo-1461023058943-07fcbe16d735",
+    "imageAlt": "Creamy latte in warm café light",
+    "featured": true
+  },
+  {
+    "id": "honey-cinnamon-latte",
+    "name": "Honey Cinnamon Latte",
+    "category": "SIGNATURE COFFEE",
+    "price": 780,
+    "description": "Espresso, honey, cinnamon, and velvety steamed milk.",
+    "imageId": "photo-1509042239860-f550ce710b93",
+    "imageAlt": "Freshly prepared latte topped with delicate foam",
+    "featured": true
+  },
+  {
+    "id": "iced-vanilla-oat-latte",
+    "name": "Iced Vanilla Oat Latte",
+    "category": "SIGNATURE COFFEE",
+    "price": 760,
+    "description": "A cool, smooth latte with subtle vanilla notes.",
+    "imageId": "photo-1461023058943-07fcbe16d735",
+    "imageAlt": "Iced latte in a clear glass"
+  },
+  {
+    "id": "espresso",
+    "name": "Espresso",
+    "category": "ESPRESSO BAR",
+    "price": 450,
+    "description": "A short, bold classic with a rounded finish.",
+    "imageId": "photo-1510707577719-ae7c14805e3a",
+    "imageAlt": "Small cup of espresso"
+  },
+  {
+    "id": "americano",
+    "name": "Americano",
+    "category": "ESPRESSO BAR",
+    "price": 500,
+    "description": "Espresso and hot water, clean and uncomplicated.",
+    "imageId": "photo-1495474472287-4d71bcdd2085",
+    "imageAlt": "Black coffee in a ceramic mug"
+  },
+  {
+    "id": "cappuccino",
+    "name": "Cappuccino",
+    "category": "ESPRESSO BAR",
+    "price": 650,
+    "description": "Espresso with steamed milk and a soft foam finish.",
+    "imageId": "photo-1509042239860-f550ce710b93",
+    "imageAlt": "Cappuccino with latte art"
+  },
+  {
+    "id": "butter-croissant",
+    "name": "Butter Croissant",
+    "category": "BAKERY",
+    "price": 480,
+    "description": "Golden, flaky layers with a buttery finish.",
+    "imageId": "photo-1555507036-ab1f4038808a",
+    "imageAlt": "Golden butter croissant on a plate",
+    "featured": true
+  },
+  {
+    "id": "almond-croissant",
+    "name": "Almond Croissant",
+    "category": "BAKERY",
+    "price": 620,
+    "description": "A crisp pastry topped with sliced almonds.",
+    "imageId": "photo-1555507036-ab1f4038808a",
+    "imageAlt": "Fresh almond croissant"
+  },
+  {
+    "id": "chocolate-banana-bread",
+    "name": "Chocolate Banana Bread",
+    "category": "BAKERY",
+    "price": 540,
+    "description": "A tender slice with chocolate and ripe banana notes.",
+    "imageId": "photo-1606313564200-e75d5e30476c",
+    "imageAlt": "Chocolate cake and baked dessert on a plate",
+    "featured": true
+  },
+  {
+    "id": "cinnamon-roll",
+    "name": "Cinnamon Roll",
+    "category": "BAKERY",
+    "price": 560,
+    "description": "Soft swirls of cinnamon with a light glaze.",
+    "imageId": "photo-1509365465985-25d11c17e812",
+    "imageAlt": "Fresh cinnamon roll on a plate"
+  },
+  {
+    "id": "avocado-toast",
+    "name": "Avocado Toast",
+    "category": "LIGHT BITES",
+    "price": 950,
+    "description": "Toasted sourdough with fresh avocado and seasonal toppings.",
+    "imageId": "photo-1525351484163-7529414344d8",
+    "imageAlt": "Avocado toast on a ceramic plate"
+  },
+  {
+    "id": "grilled-chicken-sandwich",
+    "name": "Grilled Chicken Sandwich",
+    "category": "LIGHT BITES",
+    "price": 1150,
+    "description": "Grilled chicken, fresh greens, and house-style sauce.",
+    "imageId": "photo-1528735602780-2552fd46c7af",
+    "imageAlt": "Fresh sandwich served on a board"
+  },
+  {
+    "id": "seasonal-granola-bowl",
+    "name": "Seasonal Granola Bowl",
+    "category": "LIGHT BITES",
+    "price": 880,
+    "description": "Granola, yogurt, and fresh seasonal fruit.",
+    "imageId": "photo-1517673132405-a56a62b18caf",
+    "imageAlt": "Breakfast bowl topped with fruit and granola"
+  },
+  {
+    "id": "morning-pairing",
+    "name": "Morning Pairing",
+    "category": "SIGNATURE COFFEE",
+    "price": 1050,
+    "description": "One Honey Cinnamon Latte paired with one Butter Croissant. Available daily until 11:30 AM; subject to café confirmation.",
+    "imageId": "photo-1442512595331-e89e73853f31",
+    "imageAlt": "A latte and flaky croissant in warm morning light",
+    "promotion": true,
+    "includes": [
+      "honey-cinnamon-latte",
+      "butter-croissant"
+    ]
+  }
+]
