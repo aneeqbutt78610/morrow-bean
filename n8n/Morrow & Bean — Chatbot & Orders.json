@@ -6,7 +6,7 @@
         "public": true,
         "mode": "webhook",
         "options": {
-          "allowedOrigins": "https://morrowbean.netlify.app,http://localhost:5173,http://localhost:4173",
+          "allowedOrigins": "https://morrow-bean.netlify.app,http://localhost:5173,http://localhost:4173",
           "loadPreviousSession": "memory"
         }
       },
@@ -171,7 +171,7 @@
         "path": "morrow-events",
         "authentication": "none",
         "options": {
-          "allowedOrigins": "https://morrowbean.netlify.app,http://localhost:5173,http://localhost:4173"
+          "allowedOrigins": "https://morrow-bean.netlify.app,http://localhost:5173,http://localhost:4173"
         }
       },
       "id": "8f1f8a65-6ec5-4d54-8fef-e72b3cf3f856",
@@ -489,7 +489,7 @@
     },
     {
       "parameters": {
-        "content": "## Chatbot\nThe website widget posts to this Chat Trigger. Set VITE_N8N_CHAT_URL on Netlify to its Chat URL.\nAllowed Origins already include https://morrowbean.netlify.app and localhost.",
+        "content": "## Chatbot\nThe website widget posts to this Chat Trigger. Set VITE_N8N_CHAT_URL on Netlify to its Chat URL.\nAllowed Origins already include https://morrow-bean.netlify.app and localhost.",
         "height": 200,
         "width": 420
       },

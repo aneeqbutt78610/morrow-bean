@@ -1,0 +1,12 @@
+# Netlify build settings (read automatically on every deploy from GitHub).
+# Live site: https://morrow-bean.netlify.app — static only; n8n is the backend.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+  # Public n8n URLs baked into the site at build time (not secrets — the browser calls them).
+  # Change them here, or override in Netlify → Environment variables.
+  VITE_N8N_CHAT_URL = "https://aneeqbutt.app.n8n.cloud/webhook/00000000-0000-4000-8000-000000000901/chat"
+  VITE_N8N_EVENTS_URL = "https://aneeqbutt.app.n8n.cloud/webhook/morrow-events"

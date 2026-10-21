@@ -85,7 +85,7 @@ Everything behind the site runs in one n8n workflow: [n8n/Morrow & Bean — Chat
 | Order page | **Order Events Webhook** → Validate & Re-price → staff email, Google Sheet, customer confirmation, large-order alert | `VITE_N8N_EVENTS_URL` = the node's Production URL |
 | Contact form | same webhook → Is Inquiry? → staff email + guest acknowledgement | same `VITE_N8N_EVENTS_URL` |
 
-Both URLs are public by design (the browser calls them), so they are `VITE_` variables; no API key or secret is ever in the site. Both nodes allow `https://morrowbean.netlify.app` and localhost under *Allowed Origins* — add any new domain there.
+Both URLs are public by design (the browser calls them), so they are `VITE_` variables; no API key or secret is ever in the site. Both nodes allow `https://morrow-bean.netlify.app` and localhost under *Allowed Origins* — add any new domain there.
 
 ### Event contract (browser → n8n)
 
@@ -118,7 +118,7 @@ The site shows a confirmation only after n8n answers `2xx`; otherwise the guest 
 
 `public/_redirects` contains `/* /index.html 200` and is copied into `dist` by Vite for React Router history fallback.
 
-The live site is <https://morrowbean.netlify.app>. Set `VITE_N8N_CHAT_URL` and `VITE_N8N_EVENTS_URL` in Netlify's environment variables and redeploy; nothing else needs hosting.
+The live site is <https://morrow-bean.netlify.app>. `netlify.toml` holds the build settings and both public n8n URLs (`VITE_N8N_CHAT_URL`, `VITE_N8N_EVENTS_URL`), so a push to `main` is all a deploy needs; nothing else needs hosting.
 
 ## Notes before public launch
 
